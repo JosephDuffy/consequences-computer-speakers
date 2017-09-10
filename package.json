@@ -1,0 +1,34 @@
+{
+  "name": "consequences-computer-speakers",
+  "description": "View and control a computer's volume using Consequences",
+  "author": "Joseph Duffy",
+  "version": "0.1.0",
+  "preferGlobal": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "tslint 'src/**/*.ts' --exclude 'src/**/*.d.ts'",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "license": "MIT",
+  "repository": "git+https://github.com/JosephDuffy/consequences-computer-speakers",
+  "keywords": [
+    "consequences-addon"
+  ],
+  "dependencies": {
+    "loudness": "^0.2.2"
+  },
+  "peerDependencies": {
+    "consequences": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.28",
+    "@types/winston": "^2.3.5",
+    "consequences": "josephduffy/consequences",
+    "tslint": "^5.7.0",
+    "tslint-misc-rules": "^3.2.0",
+    "typescript": "^2.5.2"
+  }
+}
